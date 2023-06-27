@@ -1,0 +1,106 @@
+/* CSS styles for your webpage */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --secondary-bg-color:#1F2937;
+    --bg-text-color:#E5E7EB;
+    --primary-text-color:#F9FAF8;
+    --secondary-text-color:#1F2937;
+    --btn-color: #3882f6;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:var(--secondary-bg-color);
+    padding: 10px;
+    color: #fff;
+    padding: 20px 50px;
+    margin-bottom: 50px;
+}
+header .logo_nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header .logo{
+    height: 40px;
+    width: 40px;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+    
+}
+nav ul li a {
+    font-size: 18px;
+    color: var(--bg-text-color);
+    text-decoration: none;
+
+}
+nav ul li {
+
+    list-style: none;
+    
+}
+
+.description_image{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.description_btn {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.description_btn h1 {
+    font-size: 48px;
+    letter-spacing: 10px;
+    color: var(--primary-text-color);
+    margin-bottom: 20px;
+}
+
+.description_btn p {
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--teritary-bg-text-color);
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+.description_btn button {
+    max-width: 150px; 
+    height: 40px;
+    background-color: var(--btn-color);
+    color: var(--primary-text-color);
+    font-size: 18px;
+    font-weight: bolder;
+    border: var(--primary-text-color) solid;
+    border-radius: 10px;
+    transition: all .2s;
+
+}
+
+.description_btn button:hover {
+    cursor: pointer;
+    transform: scaleX(1.02);
+    background-color: transparent;
+    
+}
+
+.image img {
+ border: #E5E7EB solid 5px;
+ border-radius: 50px;
+}
+
