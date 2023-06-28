@@ -1,14 +1,14 @@
 /* CSS styles for your webpage */
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 :root {
-    --secondary-bg-color:#1F2937;
-    --bg-text-color:#E5E7EB;
-    --primary-text-color:#F9FAF8;
-    --secondary-text-color:#1F2937;
+    --secondary-bg-txt-color: #1F2937;
+    --bg-text-color: #E5E7EB;
+    --primary-text-color: #F9FAF8;
     --btn-color: #3882f6;
 }
 
@@ -21,18 +21,19 @@ body {
 }
 
 header {
-    background-color:var(--secondary-bg-color);
+    background-color: var(--secondary-bg-txt-color);
     padding: 10px;
-    color: #fff;
     padding: 20px 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
+
 header .logo_nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-header .logo{
+
+header .logo {
     height: 40px;
     width: 40px;
 }
@@ -40,21 +41,23 @@ header .logo{
 nav ul {
     display: flex;
     gap: 10px;
-    
+
 }
+
 nav ul li a {
     font-size: 18px;
     color: var(--bg-text-color);
     text-decoration: none;
 
 }
+
 nav ul li {
 
     list-style: none;
-    
+
 }
 
-.description_image{
+.description_image {
     display: flex;
     justify-content: space-evenly;
 }
@@ -65,6 +68,7 @@ nav ul li {
     flex-direction: column;
     gap: 10px;
 }
+
 .description_btn h1 {
     font-size: 48px;
     letter-spacing: 10px;
@@ -75,12 +79,13 @@ nav ul li {
 .description_btn p {
     font-size: 18px;
     line-height: 30px;
-    color: var(--teritary-bg-text-color);
+    color: var(--bg-text-color);
     margin-bottom: 15px;
     letter-spacing: 2px;
 }
-.description_btn button {
-    max-width: 150px; 
+
+.btn{
+    max-width: 150px;
     height: 40px;
     background-color: var(--btn-color);
     color: var(--primary-text-color);
@@ -88,19 +93,102 @@ nav ul li {
     font-weight: bolder;
     border: var(--primary-text-color) solid;
     border-radius: 10px;
-    transition: all .2s;
+    transition: all .1s;
 
 }
 
-.description_btn button:hover {
+.btn:hover {
     cursor: pointer;
     transform: scaleX(1.02);
-    background-color: transparent;
-    
+    background-color: var(--secondary-bg-txt-color);
+
 }
 
-.image img {
- border: #E5E7EB solid 5px;
- border-radius: 50px;
+.description_image .image img {
+    border: #E5E7EB solid 5px;
+    border-radius: 50px;
 }
 
+.images_informations {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.images_informations .information {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+}
+
+.images_informations .panels {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.images_informations img {
+    height: 200px;
+    width: 200px;
+    border: var(--btn-color) solid 4px;
+    border-radius: 20px;
+}
+
+.images_informations .images {
+    margin-bottom: 7px;
+}
+
+.images_informations .text {
+
+    text-align: center;
+}
+
+.quotes {
+
+    background-color: var(--bg-text-color);
+    color: #1F2937;
+    height: 300px;
+    font-size: 36px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    padding: 50px 20px;
+}
+.action_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+.action_btn_container{
+    margin: 20px 50px;
+    color: var(--primary-text-color);
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    border-radius: 10px;
+    gap: 50px;
+    background-color: var(--btn-color);
+}
+
+.action_desc .main_text{
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+.action_btn p {
+    letter-spacing: 0.2px;
+}
+.action_btn .btn {
+    width: 150px;
+}
+
+footer {
+    color: var(--primary-text-color);
+    background-color: var(--secondary-bg-txt-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
